@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .interests-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .interests-list li {
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Đăng ký thông tin</h2>
+        <form action="#" method="get">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Tuổi:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="age" value="<18" required> Dưới 18</label>
+                    <label><input type="radio" name="age" value="19-35"> 19-35</label>
+                    <label><input type="radio" name="age" value="36-49"> 36-49</label>
+                    <label><input type="radio" name="age" value=">49"> Trên 49</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="profession">Nghề nghiệp:</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Quốc gia:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Chọn một quốc gia --</option>
+                    <option value="vietnam">Việt Nam</option>
+                    <option value="usa">Mỹ</option>
+                    <option value="uk">Anh</option>
+                    <option value="australia">Úc</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích:</label>
+                <ul class="interests-list">
+                    <li><label><input type="checkbox" name="interests" value="sports"> Thể thao</label></li>
+                    <li><label><input type="checkbox" name="interests" value="music"> Âm nhạc</label></li>
+                    <li><label><input type="checkbox" name="interests" value="movies"> Phim ảnh</label></li>
+                    <li><label><input type="checkbox" name="interests" value="reading"> Đọc sách</label></li>
+                    <li><label><input type="checkbox" name="interests" value="travel"> Du lịch</label></li>
+                    <li><label><input type="checkbox" name="interests" value="chill"> neflit and chill</label></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label for="how-found">Bạn biết đến trang web bằng cách nào?</label>
+                <textarea id="how-found" name="how-found" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
