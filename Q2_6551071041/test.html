@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Homepage</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .logo {
+      margin: 10px 0 20px 0;
+      text-align: center;
+    }
+
+    .menu {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .menu a {
+      margin: 0 15px;
+      text-decoration: underline;
+      color: black;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .column {
+      text-align: center;
+      width: 48%;
+    }
+    .divider {
+      border-left: 1px solid black;
+      margin: 0 10px;
+    }
+    .content h3 {
+      margin-top: 0;
+    }
+    .content p {
+      margin: 5px 0 15px 0;
+    }
+
+    .footer {
+      font-size: 14px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .footer a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <h1>Home page</h1>
+    
+    <div class="logo"><img src="logo.png" style="width: 2%;"> UTC2</div>
+
+    <!-- Menu -->
+    <div class="menu">
+      <a href="one.html">Presentation</a>
+      <a href="two.html">Studies</a>
+      <a href="three.html">Staff</a>
+    </div>
+
+    <!-- Nội dung -->
+    <div class="content">
+      <!-- Cột News -->
+      <div class="column">
+        <h3>News</h3>
+        <p><b>News 1 – Date</b><br>
+        Description</p>
+        <p><b>News 2 – Date</b><br>
+        Description</p>
+      </div>
+
+      <!-- Đường kẻ dọc -->
+      <div class="divider"></div>
+
+      <!-- Cột Announcements -->
+      <div class="column" >
+        <h3>Announcements</h3>
+        <p><b>Open course 1</b><br>
+        Description</p>
+        <p><b>Open course 2</b><br>
+        Description</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      Contact: <a href="mailto:info@university.com">info@university.com</a><br>
+      (c) University, 2011
+    </div>
+  </div>
+</body>
+</html>
